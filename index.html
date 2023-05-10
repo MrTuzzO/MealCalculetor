@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meal Management System</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+        <h1>Meal Management System</h1>
+      </header>
+    
+      <main>
+        <section id="person-details">
+            <form id="add-person-form">
+                <h3>Add Person</h3>
+                <label for="person-name">Name:</label>
+                <input type="text" id="person-name" required>
+        
+                <label for="person-meal">Total Meal:</label>
+                <input type="number" id="person-meal" required>
+        
+                <label for="person-deposit">Deposit:</label>
+                <input type="number" id="person-deposit" required>
+        
+                <button type="submit">Add Person</button>
+                <button type="button" id="reset-button">Reset</button> <!-- New button -->
+              </form>
+          <h2>Person Details</h2>
+          <table id="person-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Total Meal</th>
+                <th>Deposit</th>
+                <th>Cost in a Month</th>
+                <th>Refund/Loan</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="person-table-body">
+              <!-- Table rows will be dynamically added using JavaScript -->
+            </tbody>
+          </table>
+    
+          
+        </section>
+    
+        <section id="meal-rate">
+          <h2>Meal Rate</h2>
+          <p id="meal-rate-text">Meal rate will be calculated after adding person details.</p>
+        </section>
+      </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
