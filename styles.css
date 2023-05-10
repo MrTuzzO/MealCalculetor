@@ -62,22 +62,9 @@ header h1 {
   text-align: center;
   padding-bottom: 10px;
 }
-#add-person-form{
-  display: flex;
-  justify-content: space-between;
-}
-#add-person-form div{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-block: 5px;
-}
 /* Media Query for Responsive Design */
 @media (max-width: 930px) {
   .container {
     padding: 10px;
-  }
-  #add-person-form{
-    flex-direction: column;
   }
 }
