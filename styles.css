@@ -1,68 +1,83 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #008CBA;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+header h1 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+#add-person-form{
+  display: flex;
+  justify-content: space-between;
+}
+#add-person-form div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-block: 5px;
+}
+/* Media Query for Responsive Design */
+@media (max-width: 930px) {
   .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
   }
-  
-  h1, h2, h3 {
-    color: #333;
+  #add-person-form{
+    flex-direction: column;
   }
-  
-  form {
-    margin-bottom: 20px;
-  }
-  
-  input[type="text"],
-  input[type="number"],
-  select {
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    padding: 8px 16px;
-    border-radius: 4px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-  }
-  
-  button[type="submit"] {
-    background-color: #008CBA;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
-  header h1{
-    text-align: center;
-    padding-bottom: 10px;
-  }
-  
-  /* Media Query for Responsive Design */
-  @media (max-width: 768px) {
-    .container {
-      padding: 10px;
-    }
-  }
-  
+}
