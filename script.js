@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const totalMeal = getTotalMeal();
       const totalDeposit = getTotalDeposit();
       const mealRate = totalMeal === 0 ? 0 : (totalDeposit / totalMeal).toFixed(2);
-      mealRateText.textContent = `Meal rate: $${mealRate} per meal`;
+      mealRateText.textContent = `Meal rate: ${mealRate} TK/meal \n Total Meal: ${totalMeal} \n Total Cost: ${totalDeposit} TK`;
   
       persons.forEach((person) => {
         const personCost = (person.meal * mealRate).toFixed(2);
